@@ -26,7 +26,9 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
+
 
 @media only screen and (max-width: 760px) {
   .main-content {
@@ -51,6 +53,9 @@ header .content {
 
 header .logo {
   flex: 1;
+  font-family: 'Roboto', monospace; /* Fix this font Roboto-Mono-Regular*/
+  font-size: 1.5em;
+  color: #4a4a4a;
 }
 
 header nav ul {
@@ -117,9 +122,16 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image: url(../images/banner-landingpage.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #sign-up-cta {
+  position: relative;
+  top: 171px;
+  left: 10%;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -229,6 +241,10 @@ header .mobile {
   margin: 0 auto;
 }
 
+.feature .content {
+  padding: 2.5rem 0;
+}
+
 .feature h2 {
   padding-bottom: .5rem;
   font-size: 2.25rem;
@@ -294,6 +310,7 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
   max-width: 100%;
   padding: 0 1%;
 }
@@ -304,7 +321,8 @@ header .mobile {
   }
 
   #filters-section .content {
-    margin-bottom: 1rem;
+    padding: 0 .625rem;
+    margin-bottom: 5rem;
   }
 
   #filters-section .content h2 {
@@ -320,7 +338,8 @@ header .mobile {
   }
 
   #filters-section .images-container {
-    padding: 0;
+    max-width: 100%;
+    padding: 0 1%;
   }
 
   #filters-section .extra {
